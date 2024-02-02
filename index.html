@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./style.css" rel="stylesheet">
+		<script src="./main.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Books @ World</h1>
+
+			<div class="form-wrapper justify-end">
+				<button class="add-book-form-toggler">
+					<span class="label">Add Book</span>
+				</button>
+
+				<form action="/" class="add-book-form hidden">
+					<ul>
+						<li>
+							<label for="title">
+								<span>Book title</span>
+								<input type="text" name="title" value="" id="title" />
+							</label>
+						</li>
+
+						<li>
+							<label for="author">
+								<span>Author</span>
+								<input type="text" name="author" value="" id="author" />
+							</label>
+						</li>
+
+						<li>
+							<label for="year-published">
+								<span>Year published</span>
+								<input type="number" id="year_published" name="year_published" min="1000" max="3000" />
+							</label>
+						</li>
+
+						<li>
+							<label for="book-pages">
+								<span>Pages</span>
+								<input type="number" id="book-pages" name="pages" min="1" />
+							</label>
+						</li>
+
+						<li>
+							<label for="read-book">
+								<span>Read book</span>
+								<input type="checkbox" name="read_book" id="read-book" />
+							</label>
+						</li>
+
+						<li>
+							<button class="submit">Add book</button>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+
+		<main>
+			<div class="cards">
+				<!-- To be filled by the main.js script -->
+			</div>
+		</main>
+	</body>
+</html>
